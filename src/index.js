@@ -7,7 +7,7 @@ import { Footer } from "./Footer";
 
 export const pizzaData = [
   {
-    name: "Focaccia",
+    name: "ocaccia",
     ingredients: "Bread with italian olive oil and rosemary",
     price: 6,
     photoName: "pizzas/focaccia.jpg",
