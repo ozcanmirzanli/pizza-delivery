@@ -51,36 +51,47 @@ export const pizzaData = [
 ];
 
 function App() {
-  const [cartItems, setCartItems] = useState([{ name: [], quantity: 0 }]);
+  const [cartItems, setCartItems] = useState([]);
   const handleDelete = (pizzaName) => {
+    // @ts-ignore
     const existingPizza = cartItems.find((pizza) => pizza.name === pizzaName);
 
+    // @ts-ignore
     if (existingPizza && existingPizza.quantity > 0) {
+      // @ts-ignore
       const updatedQuantity = existingPizza.quantity - 1;
 
       if (updatedQuantity === 0) {
         const updatedCart = cartItems.filter(
+          // @ts-ignore
           (pizza) => pizza.name !== pizzaName
         );
+        // @ts-ignore
         setCartItems(updatedCart);
       } else {
         const updatedCart = cartItems.map((pizza) =>
+          // @ts-ignore
           pizza.name === pizzaName
-            ? { ...pizza, quantity: updatedQuantity }
+            ? // @ts-ignore
+              { ...pizza, quantity: updatedQuantity }
             : pizza
         );
+        // @ts-ignore
         setCartItems(updatedCart);
       }
     }
   };
 
   const addToCart = (pizzaObj) => {
+    // @ts-ignore
     const index = cartItems.findIndex((item) => item.name === pizzaObj.name);
     if (index !== -1) {
       const updatedCartItems = [...cartItems];
       updatedCartItems[index].quantity++;
+      // @ts-ignore
       setCartItems(updatedCartItems);
     } else {
+      // @ts-ignore
       setCartItems([...cartItems, { ...pizzaObj, quantity: 1 }]);
     }
   };
