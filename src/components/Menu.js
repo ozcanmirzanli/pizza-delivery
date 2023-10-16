@@ -1,6 +1,7 @@
 import React from "react";
-import { pizzaData } from ".";
+
 import { Pizza } from "./Pizza";
+import { pizzaData } from "..";
 
 export function Menu({ addToCart, handleDelete }) {
   const pizzas = pizzaData;
