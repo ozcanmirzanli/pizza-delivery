@@ -279,6 +279,7 @@ span > .added-to-cart {
   .cartFunc {
     position: absolute;
     margin: 10rem auto;
+    background-color: #ff2200;
   }
   .added-to-cart {
     min-width: 18rem;
