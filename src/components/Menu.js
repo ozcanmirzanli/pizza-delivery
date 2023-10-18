@@ -13,8 +13,8 @@ export function Menu({ addToCart, handleDelete }) {
       {numPizzas > 0 ? (
         <>
           <p>
-            Italian cuisine. 6 creative dishes to choose from. All from our
-            stone oven, all organic, all delicious.
+            Authentic Italian cuisine. 6 creative dishes to choose from. All
+            from our stone oven, all organic, all delicious.
           </p>
 
           <ul className="pizzas">
