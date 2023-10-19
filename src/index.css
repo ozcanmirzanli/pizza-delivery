@@ -261,6 +261,10 @@ span > .added-to-cart {
 
 /* Mobile devices */
 @media only screen and (max-width: 550px) {
+  .cart > h1 {
+    text-align: center;
+    font-size: 4rem;
+  }
   .pizzas {
     display: flex;
     flex-direction: row;
@@ -276,11 +280,15 @@ span > .added-to-cart {
   .cartBtn {
     margin: 0 auto;
   }
+
   .cartFunc {
-    position: absolute;
-    margin: 15rem auto;
-    background-color: #ff2200;
+    background-color: rgb(255, 183, 125);
+    position: fixed;
+    margin: 0;
+    width: auto;
+    padding: 1rem;
   }
+
   .added-to-cart {
     min-width: 18rem;
     display: flex;
@@ -294,5 +302,10 @@ span > .added-to-cart {
     display: flex;
     right: -2rem;
     bottom: 23rem;
+  }
+  .cart-icon {
+    position: fixed;
+    right: 1.5rem;
+    top: 2rem;
   }
 }
